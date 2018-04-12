@@ -2,11 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
     <p>See the console</p>
+    <script>
+        var x = 10;
+        var y = 9;
+        var z = x + y;
+
+        if(z > 25) {
+            console.log(z);
+        }
+        else if(z >10){
+            console.log('almost! only off by', 25 - z);
+        }
+        else {
+            console.log('sorry number', z, 'not big enough');
+        }
+    </script>
+    <script>
+        var a = '';
+
+        while(a < 'aaaa') {
+            console.log(a);
+            a = a + 'a';
+        }
+
+    </script>
+    <script>
+    for(var i = 0; i < 10; i++) {
+        console.log(i);
+    }
+    </script>
 </body>
 </html>
