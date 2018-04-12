@@ -9,8 +9,8 @@
 <body>
     <p>See the console</p>
     <script>
-        var x = 10;
-        var y = 9;
+        var x = +prompt('What is the value of x?');
+        var y = +prompt('What is the value of y?');
         var z = x + y;
 
         if(z > 25) {
@@ -33,8 +33,17 @@
 
     </script>
     <script>
-    for(var i = 0; i < 10; i++) {
-        if(i % 2 ===0) {
+        var max = +prompt('Count to?');
+        var confirmed = confirm('click ok for even, cancel for odd');
+        var remainder;
+        if(confirmed) {
+            remainder = 0
+        }
+        else {
+            remainder = 1 
+        }
+        for(var i = 0; i < max; i++) {
+        if(i % 2 === remainder) {
         console.log(i);
         }
     }
